@@ -32,5 +32,5 @@ export default function Cardapio() {
 				<Itens busca={busca} filtro={filtro} ordenador={ordenador}/>
 			</section>
 		</main>
-	)
+	);
 }

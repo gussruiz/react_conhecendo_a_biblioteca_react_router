@@ -12,8 +12,8 @@ export default function Filtros({filtro, setFiltro}: Props){
     type opcao = typeof filtros[0];
     
     function selecionarFiltro(opcao: opcao) {
-        if(filtro === opcao.id) return setFiltro(null)
-        return setFiltro(opcao.id)
+        if(filtro === opcao.id) return setFiltro(null);
+        return setFiltro(opcao.id);
     }
 
 

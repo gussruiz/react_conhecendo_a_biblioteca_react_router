@@ -2,8 +2,8 @@ import classNames from 'classnames';
 import React, { useState } from 'react';
 import opcoes from './opcoes.json';
 import styles from './Ordenador.module.scss';
-import { MdKeyboardArrowUp } from 'react-icons/md'
-import { MdKeyboardArrowDown } from 'react-icons/md'
+import { MdKeyboardArrowUp } from 'react-icons/md';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 interface Props{
     ordenador: string,
@@ -13,7 +13,7 @@ interface Props{
 export default function Ordenador({ordenador, setOrdenador}: Props){
 
     const [aberto, setAberto] = useState(false);
-    const nomeOrdenador = ordenador && opcoes.find(opcao => opcao.value === ordenador)?.nome
+    const nomeOrdenador = ordenador && opcoes.find(opcao => opcao.value === ordenador)?.nome;
 
     return (
         <button 
